@@ -1,0 +1,85 @@
+@media screen and (max-width:980px){
+  .center{padding:0 25px;}
+  .hiddenHeader{right:25px;}
+}
+
+@media screen and (max-width:780px){
+  /* Container Style */
+  .wrap{justify-content: start;}
+  .container{grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(9, minmax(100px, auto)); padding:20px 0;}
+
+  .container .item:nth-child(1),
+  .container .item:nth-child(2),
+  .container .item:nth-child(3),
+  .container .item:nth-child(4),
+  .container .item:nth-child(5){grid-column-start:1; grid-column-end:3;}
+
+  /* Input form Page Style */
+  .inputContainer{grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(5, minmax(100px, auto)); padding:20px 0;}
+  .inputContainer .item{grid-column-start:1; grid-column-end:3;}
+  .inputContainer .item.subPfBar{display:none;}
+
+  /* Button Box Style */
+  .btns{justify-content: center;}
+  .btns button, .btns a, .loadMore button, .subBtn button{padding:5px 20px; font-size:12px; }
+
+  /* Footer Style */
+  footer{position:relative;}
+
+  /* Schedule Board Page Style */
+  .item.boardBox .boardTable span{font-size:12px;}
+
+  /* Detail View Page Style */
+  .item.viewBox .viewTable span{font-size:12px;}
+}
+
+@media screen and (max-width:600px){
+  .item.inputBox .projectCate{font-size:12px; width:100%;}
+  .item.inputBox .projectTit{font-size:12px; width:100%; margin-top:5px;}
+  .item.inputBox .projectCon{font-size:12px;}
+
+  /* Schedule Board Page Style */
+  .item.boardBox .boardTable span.boNum{display:none;}
+  .item.boardBox .boardTable span.boReg{width:30%;}
+
+  .categoryTabs{text-align:center;}
+
+  /* Detail View Page Style */
+  .item.viewBox .viewTable span.boNum{display:none;}
+  .item.viewBox .viewTable span.boCate{display:none;}
+  .item.viewBox .viewTable span.boCon{width:70%;}
+  .item.viewBox .viewTable span.boReg{width:30%;}
+
+  .item.viewBox .detailTit h2{font-size:14px;}
+
+  /* hidden input style */
+.hiddenTit{width:100%; font-size:12px;}
+.hiddenCon{width:100%; font-size:12px;}
+}
+
+@media screen and (max-width:400px){
+  /* Header Title Style */
+  header .headerWrap h1{font-size:16px;}
+
+  .container{grid-template-rows: repeat(9, minmax(70px, auto));}
+  .circle-graph p{font-size:18px; font-weight:400;}
+
+  .subPfBar .pfImg{font-size:20px;}
+
+  /* Button Style */
+  .btns button, .btns a{width:33.33%;}
+
+  /* Footer Style */
+  footer{padding:10px 15px;}
+  footer p{font-size:12px;}
+
+  /* Schedule Board Page Style */
+  .item.boardBox .boardTable span.boCate{display:none;}
+  .item.boardBox .boardTable span.boTit{width:60%;}
+  .item.boardBox .boardTable span.boReg{width:40%;}
+
+  /* Detail View Page Style */
+  .item.viewBox .viewTable span.boCate{display:none;}
+  .item.viewBox .viewTable span.boCon{width:70%;}
+  .item.viewBox .viewTable span.boReg{width:30%;}
+}
